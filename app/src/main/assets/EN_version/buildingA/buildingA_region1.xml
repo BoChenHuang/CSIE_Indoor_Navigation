@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<BuildingA>
+
+    <region1>
+        <node id='00010015-0000-0010-1001-000000101001' name='營建系門出口' region='region1' lat='23.695360' lon='120.536923' neighbor1='00010015-0000-0010-1002-000000101002' neighbor2='' neighbor3='' neighbor4='' category='資工系一樓' nodeType='' connectPointID='' groupID='' mainID='' attachID1='' elevation='1'/>
+		<node id='00010015-0000-0010-1002-000000101002' name='系辦' region='region1' lat='23.695450277777777' lon='120.536923' neighbor1='00010015-0000-0010-1001-000000101001' neighbor2='00010015-0000-0010-1003-000000101003' neighbor3='00010015-0000-0010-1004-000000101004' neighbor4='' category='資工系一樓' nodeType='' connectPointID='' groupID='' mainID='1' attachID1='1' elevation='1'/>
+		<node id='00010015-0000-0010-1003-000000101003' name='EB109&EB110' region='region1' lat='23.695450277777777' lon='120.53696222222221' neighbor1='00010015-0000-0010-1002-000000101002' neighbor2='' neighbor3='' neighbor4='' category='資工系一樓' nodeType='2' connectPointID='1' groupID='' mainID='2' attachID1='2' elevation='1'/>
+		<node id='00010015-0000-0010-1004-000000101004' name='資工系門出口' region='region1' lat='23.695450277777777' lon='120.53667788888889' neighbor1='00010015-0000-0010-1002-000000101002' neighbor2='' neighbor3='' neighbor4='' category='資工系一樓' nodeType='2' connectPointID='2' groupID='' mainID='' attachID1='' elevation='1'/>
+        
+   </region1>
+
+
+</BuildingA>
+
+

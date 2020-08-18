@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/gear"
+        android:icon="@drawable/gear"
+        android:orderInCategory="50"
+        android:title="語言"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/information"
+        android:icon="@drawable/info"
+        android:orderInCategory="51"
+        android:title="相關資訊"
+        app:showAsAction="always" />
+</menu>

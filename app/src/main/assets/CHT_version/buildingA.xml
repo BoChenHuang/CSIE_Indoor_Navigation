@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<BuildingA>
+    <region id='1' name='region1' neighbor1='region2' neighbor2='' neighbor3='' neighbor4='' elevation='1'>
+	    <node id='00010015-0000-0010-1001-000000101001' name='營建系門出口' region='region1' category='其他'/>
+		<node id='00010015-0000-0010-1002-000000101002' name='資工系辦公室' region='region1' category='系辦'/>
+		<node id='00010015-0000-0010-1003-000000101003' name='EB109教室' region='region1' category='教室'/>
+		<node id='00010015-0000-0010-1003-000000101003' name='EB110教室' region='region1' category='教室'/>
+		<node id='00010015-0000-0010-1002-000000101002' name='EB111會議室' region='region1' category='會議室'/>
+		<node id='00010015-0000-0010-1004-000000101004' name='資工系門出口' region='region1' category='其他'/>
+	</region>
+	<region id='2' name='region2' neighbor1='region1' neighbor2='' neighbor3='' neighbor4='' elevation='2'>
+		<node id='00020015-0000-0010-1001-000000101001' name='EB208教室' region='region2' category='教室'/>
+		<node id='00020015-0000-0010-1001-000000101001' name='行動計算與網路實驗室' region='region2' category='實驗室'/>
+		<node id='00020015-0000-0010-1002-000000101002' name='嵌入式智慧型作業實驗室' region='region2' category='實驗室'/>
+		<node id='00020015-0000-0010-1002-000000101002' name='嵌入式作業系統實驗室' region='region2' category='實驗室'/>
+		<node id='00020015-0000-0010-1003-000000101003' name='行動寬頻暨音訊與語音處理實驗室' region='region2' category='實驗室'/>
+		<node id='00020015-0000-0010-1003-000000101003' name='EB211教室' region='region2' category='教室'/>
+		<node id='00020015-0000-0010-1005-000000101005' name='高光譜訊號與影像處理實驗室' region='region2' category='實驗室'/>
+		<node id='00020015-0000-0010-1005-000000101005' name='EB207會議室' region='region2' category='實驗室'/>
+		<node id='00020015-0000-0010-1006-000000101006' name='醫學影像處理實驗室' region='region2' category='實驗室'/>
+		<node id='00020015-0000-0010-1007-000000101007' name='e化健康資訊與系統實驗室' region='region2' category='實驗室'/>
+    </region>
+</BuildingA>
+
+

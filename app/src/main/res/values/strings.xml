@@ -1,0 +1,269 @@
+<resources>
+    <string name="app_name">CSIE Indoor Positioning System</string>
+    <string name="version_code">1.0.0</string>
+
+    <string name="CHT_SYSTEM">系統</string>
+    <string name="ENG_SYSTEM">System</string>
+
+    <string name="CHT_OK">確定</string>
+    <string name="ENG_OK">OK</string>
+
+    <string name="CHT_CANCEL">取消</string>
+    <string name="ENG_CANCEL">Cancel</string>
+
+    <string name="CHT_AUTHORITY_MESSAGE">請開啟定位權限</string>
+    <string name="ENG_AUTHORITY_MESSAGE">Please turn on location permissions.</string>
+
+    <string name="CHT_TURN_AUTHORITY_MESSAGE">藍牙或定位權限未開啟</string>
+    <string name="ENG_TURN_AUTHORITY_MESSAGE">Bluetooth or location permission is not turned on</string>
+
+    <string name="CHT_TITLE">資工系室內定位系統</string>
+    <string name="ENG_TITLE">CSIE Indoor Positioning System</string>
+
+    <string name="CHT_CLASS_SERCHING">課程查詢</string>
+    <string name="ENG_CLASS_SERCHING">Course inquiries</string>
+
+    <string name="CHT_LAB">實驗室</string>
+    <string name="ENG_LAB">Laboratory</string>
+
+    <string name="CHT_CLASSROOM">教室</string>
+    <string name="ENG_CLASSROOM">Class Room</string>
+
+    <string name="CHT_MEETINGROOM">會議室</string>
+    <string name="ENG_MEETINGROOM">Meeting Room</string>
+
+    <string name="CHT_OFFICE">系辦</string>
+    <string name="ENG_OFFICE">Department Office</string>
+
+    <string name="CHT_OTHER">其他</string>
+    <string name="ENG_OTHER">Other</string>
+
+    <string name="CHT_MOD_SELECT">模式選擇</string>
+    <string name="ENG_MOD_SELECT">Mode Select</string>
+
+    <string name="CHT_AR_MODE">AR模式</string>
+    <string name="ENG_AR_MODE">AR Mode</string>
+
+    <string name="CHT_NORMAL_MODE">一般模式</string>
+    <string name="ENG_NORMAL_MODE">Normal Mode</string>
+
+    <string name="CHT_RIGHSIDE">請靠右</string>
+    <string name="ENG_RIGHSIDE">After keep right.</string>
+
+    <string name="CHT_LEFTSIDE">請靠左</string>
+    <string name="ENG_LEFTSIDE">After keep left.</string>
+
+    <string name="GHT_GO_STRAIGHT">請繼續直走</string>
+    <string name="ENG_GO_STRAIGHT">Keep going straight.</string>
+
+    <string name="CHT_TURN_RIGHT">請向右轉後</string>
+    <string name="ENG_TURN_RIGHT">After turn right.</string>
+
+    <string name="CHT_TURN_LEFT">請向左轉後</string>
+    <string name="ENG_TURN_LEFT">After turn left.</string>
+
+    <string name="CHT_TURN_FRONT_RIGHT">請向右前方轉後</string>
+    <string name="ENG_TURN_FRONT_RIGHT">After turn front right.</string>
+
+    <string name="CHT_TURN_FRONT_LEFT">請向左前方轉後</string>
+    <string name="ENG_TURN_FRONT_LEFT">After turn front left.</string>
+
+    <string name="CHT_TURN_REAR_RIGHT">請向右後方轉後</string>
+    <string name="ENG_TURN_REAR_RIGHT">Aftrer turn rear right.</string>
+
+    <string name="CHT_TURN_REAR_LEFT">請向左後方轉後</string>
+    <string name="ENG_TURN_REAR_LEFT">Aftrer turn rear left.</string>
+
+    <string name="CHT_TAKE_ELEVATOR">離開電梯後</string>
+    <string name="ENG_TAKE_ELEVATOR">After take the elevator.</string>
+
+    <string name="CHT_WALK_UP_STAIR">上樓梯後</string>
+    <string name="ENG_WALK_UP_STAIR">Aftrer walk up stairs.</string>
+
+    <string name="CHT_WALK_DOWN_STAIR">下樓梯後</string>
+    <string name="ENG_WALK_DOWN_STAIR">After walk down stairs</string>
+
+    <string name="CHT_GO_STRAIGHT_ABOUT">直走約</string>
+    <string name="ENG_GO_STRAIGHT_ABOUT">Go straight about</string>
+
+    <string name="CHT_THEN_GO_STRAIGHT">然後直走</string>
+    <string name="ENG_THEN_GO_STRAIGHT">and go straight</string>
+
+    <string name="CHT_THEN_GO_STRAIGHT_RIGHTSIDE">然後靠右直走</string>
+    <string name="ENG_THEN_GO_STRAIGHT_RIGHTSIDE">and keep right</string>
+
+    <string name="CHT_THEN_GO_STRAIGHT_LEFTSIDE">然後靠左直走</string>
+    <string name="ENG_THEN_GO_STRAIGHT_LEFTSIDE">and keep left</string>
+
+    <string name="CHT_THEN_TURN_RIGHT">然後向右轉</string>
+    <string name="ENG_THEN_TURN_RIGHT">and turn right</string>
+
+    <string name="CHT_THEN_TURN_LEFT">然後向左轉</string>
+    <string name="ENG_THEN_TURN_LEFT">and turn left</string>
+
+    <string name="CHT_THEN_TURN_FORNT_RIGHT">然後向右前方轉</string>
+    <string name="ENG_THEN_TURN_FORNT_RIGHT">and turn front right</string>
+
+    <string name="CHT_THEN_TURN_FORNT_LEFT">然後向左前方轉</string>
+    <string name="ENG_THEN_TURN_FORNT_LEFT">and turn front left</string>
+
+    <string name="CHT_THEN_TURN_REAR_RIGHT">然後向右後方轉</string>
+    <string name="ENG_THEN_TURN_REAR_RIGHT">and turn rear right</string>
+
+    <string name="CHT_THEN_TURN_REAR_LEFT">然後向左後方轉</string>
+    <string name="ENG_THEN_TURN_REAR_LEFT">and turn rear left</string>
+
+    <string name="CHT_THEN_TAKE_ELEVATOR">然後搭電梯</string>
+    <string name="ENG_THEN_TAKE_ELEVATOR">and take the elevator</string>
+
+    <string name="CHT_THEN_WALK_UP_STAIR">然後爬樓梯</string>
+    <string name="ENG_THEN_WALK_UP_STAIR">and walk up stairs</string>
+
+    <string name="CHT_THEN_WALK_DOWN_STAIR">然後下樓梯</string>
+    <string name="ENG_THEN_WALK_DOWN_STAIR">and walk down stairs</string>
+
+    <string name="CHT_WAIT_FOR_ELEVATOR">電梯中請稍後</string>
+    <string name="ENG_WAIT_FOR_ELEVATOR">taking elevator</string>
+
+    <string name="CHT_WALKING_UP_STAIR">爬樓梯</string>
+    <string name="ENG_WALKING_UP_STAIR">walk up stairs</string>
+
+    <string name="CHT_WALKING_DOWN_STAIR">下樓梯</string>
+    <string name="ENG_WALKING_DOWN_STAIR">walk down stairs</string>
+
+    <string name="CHT_ARRIVE">抵達目的地</string>
+    <string name="ENG_ARRIVE">You have arriived</string>
+
+    <string name="CHT_GET_LOST">糟糕，你走錯路了</string>
+    <string name="ENG_GET_LOST">Sorry, you get lost</string>
+
+    <string name="CHT_METER">公尺</string>
+    <string name="ENG_METER">meters</string>
+
+    <string name="CHT_PLEASE_GO_STRAIGHT">請直走</string>
+    <string name="ENG_PLEASE_GO_STRAIGHT">Please go straight</string>
+
+    <string name="CHT_PLEASE_GO_STRAIGHT_RIGHTSIDE">請靠右直走</string>
+    <string name="ENG_PLEASE_GO_STRAIGHT_RIGHTSIDE">Please keep right</string>
+
+    <string name="CHT_PLEASE_GO_STRAIGHT_LEFTSIDE">請靠左直走</string>
+    <string name="ENG_PLEASE_GO_STRAIGHT_LEFTSIDE">Please keep left</string>
+
+    <string name="CHT_PLEASE_TURN_RIGHT">請右轉</string>
+    <string name="ENG_PLEASE_TURN_RIGHT">Please turn right</string>
+
+    <string name="CHT_PLEASE_TURN_LEFT">請左轉</string>
+    <string name="ENG_PLEASE_TURN_LEFT">Please turn left</string>
+
+    <string name="CHT_PLEASE_TURN_FRONT_RIGHT">請向右前方轉</string>
+    <string name="ENG_PLEASE_TURN_FRONT_RIGHT">Please turn front right</string>
+
+    <string name="CHT_PLEASE_TURN_FRONT_LEFT">請向左前方轉</string>
+    <string name="ENG_PLEASE_TURN_FRONT_LEFT">Please turn front left</string>
+
+    <string name="CHT_PLEASE_TURN_REAR_RIGHT">請向右後方轉</string>
+    <string name="ENG_PLEASE_TURN_REAR_RIGHT">Please turn rear right</string>
+
+    <string name="CHT_PLEASE_TURN_REAR_LEFT">請向左後方轉</string>
+    <string name="ENG_PLEASE_TURN_REAR_LEFT">Please turn rear left</string>
+
+    <string name="CHT_PLEASE_TAKE_ELEVATOR">請搭電梯</string>
+    <string name="ENG_PLEASE_TAKE_ELEVATOR">Please take the elevator</string>
+
+    <string name="CHT_PLEASE_WALK_UP_STAIR">請走樓梯</string>
+    <string name="ENG_PLEASE_WALK_UP_STAIR">Please walk stairs</string>
+
+    <string name="CHT_TO">至</string>
+    <string name="ENG_TO">to</string>
+
+    <string name="CHT_TO_BASEMENT">至地下一樓</string>
+    <string name="ENG_TO_BASEMENT">to B1</string>
+
+    <string name="CHT_TO_FIRST_FLOOR">至一樓</string>
+    <string name="ENG_TO_FIRST_FLOOR">to 1F</string>
+
+    <string name="CHT_TO_SECOND_FLOOR">至二樓</string>
+    <string name="ENG_TO_SECOND_FLOOR">to 2F</string>
+
+    <string name="CHT_TO_THIRD_FLOOR">至三樓</string>
+    <string name="ENG_TO_THIRD_FLOOR">to 3F</string>
+
+    <string name="CHT_FLOOR">樓</string>
+    <string name="ENG_FLOOR">F</string>
+
+    <string name="CHT_PRESENT_POSITION">目前位置 : </string>
+    <string name="ENG_PRESENT_POSITION">Current location : </string>
+
+    <string name="CHT_DESTINATION">目的地 : </string>
+    <string name="ENG_DESTINATION">Destination : </string>
+
+    <string name="CHT_RECEIVING_SIGNAL">接收訊號中</string>
+    <string name="ENG_RECEIVING_SIGNAL">Receiving signal</string>
+
+    <string name="CHT_REROUTING">正在幫您重新計算路線</string>
+    <string name="ENG_REROUTING">Rerouting</string>
+
+    <string name="CHT_PLEASE_FACE_TO_THE_DIRECION">請面對圖中方向開始導航</string>
+    <string name="ENG_PLEASE_FACE_TO_THE_DIRECION">Please face to the direction in picture and start navigation.</string>
+
+
+    <string name="UUID_of_A1">00010015-0000-0010-1001-000000101001</string>
+    <string name="UUID_of_A2">00010015-0000-0010-1002-000000101002</string>
+    <string name="UUID_of_A3">00010015-0000-0010-1003-000000101003</string>
+    <string name="UUID_of_A4">00010015-0000-0010-1004-000000101004</string>
+    <string name="UUID_of_B1">00020015-0000-0010-1001-000000101001</string>
+    <string name="UUID_of_B2">00020015-0000-0010-1002-000000101002</string>
+    <string name="UUID_of_B3">00020015-0000-0010-1003-000000101003</string>
+    <string name="UUID_of_B4">00020015-0000-0010-1004-000000101004</string>
+    <string name="UUID_of_B5">00020015-0000-0010-1005-000000101005</string>
+    <string name="UUID_of_B6">00020015-0000-0010-1006-000000101006</string>
+    <string name="UUID_of_B7">00020015-0000-0010-1007-000000101007</string>
+
+    <string name="CHT_TURN_BACK">請往回轉</string>
+    <string name="ENG_TURN_BACK">Please turn around</string>
+
+    <string name="CHT_WAIT_FOR_INSTRUCTION">然後等待指令</string>
+    <string name="ENG_WAIT_FOR_INSTRUCTION">Waiting for instructions</string>
+
+    <string name="CHT_THEN_ARRIVE">然後抵達目的地</string>
+    <string name="ENG_THEN_ARRIVE">Then arrived at the destination</string>
+
+    <string name="CHT_NOW_FACING_DIRECTION">目前面對方向 : </string>
+    <string name="ENG_NOW_FACING_DIRECTION">Current facing direction : </string>
+
+    <string name="CHT_NORTH">北</string>
+    <string name="ENG_NORTH">North</string>
+
+    <string name="CHT_NORTHEAST">東北</string>
+    <string name="ENG_NORTHEAST">Northeast</string>
+
+    <string name="CHT_EAST">東</string>
+    <string name="ENG_EAST">East</string>
+
+    <string name="CHT_SOUTHEAST">東南</string>
+    <string name="ENG_SOUTHEAST">Southeast</string>
+
+    <string name="CHT_SOUTH">南</string>
+    <string name="ENG_SOUTH">South</string>
+
+    <string name="CHT_SOUTHWEST">西南</string>
+    <string name="ENG_SOUTHWEST">Southwest</string>
+
+    <string name="CHT_WEST">西</string>
+    <string name="ENG_WEST">West</string>
+
+    <string name="CHT_NORTHWEST">西北</string>
+    <string name="ENG_NORTHWEST">Northwest</string>
+
+    <string name="CHT_PLEASE_FACE_TO">請面對</string>
+    <string name="ENG_PLEASE_FACE_TO">Please face the</string>
+
+    <string name="CHT_DIRECION">方</string>
+    <string name="ENG_DIRECION">direcion</string>
+
+    <string name="CHT_RIGHTDIRECION">方向正確開始導航</string>
+    <string name="ENG_RIGHTDIRECION">Start navigation!</string>
+
+    <string name="CHT_FACING_DIRECION">目前面對方向 : </string>
+    <string name="ENG_FACING_DIRECION">The current facing direcion : </string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <!--
+        <item android:id="@+id/menu_previous_page"
+            android:title="各科門診"
+            android:icon="@drawable/stethoscope"
+            android:orderInCategory="101"
+            app:showAsAction="always" />
+    -->
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/back"
+        android:orderInCategory="50"
+        android:title="首頁"
+        app:showAsAction="always" />
+
+</menu>

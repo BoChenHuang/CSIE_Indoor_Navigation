@@ -1,0 +1,5 @@
+include ':app'
+include ':arcore_client'
+include ':viro_core'
+include ':gvr_common'
+rootProject.name='CSIE_Indoor_Navigation'

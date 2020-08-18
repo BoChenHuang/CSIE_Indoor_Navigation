@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_blue"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="371dp">
+
+        <TextView
+            android:id="@+id/versionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/csieImg"
+            android:layout_width="match_parent"
+            android:layout_height="138dp"
+            app:srcCompat="@drawable/logo2" />
+
+        <ImageView
+            android:id="@+id/logoImg"
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33">
+
+
+                    <Button
+                        android:id="@+id/bookButtom"
+                        android:layout_width="match_parent"
+                        android:layout_height="382dp"
+                        android:background="@drawable/background"
+                        android:gravity="center|bottom"
+                        android:paddingBottom="10dp"
+                        android:singleLine="false"
+                        android:text="課程查詢"
+                        android:textSize="18sp"
+                        android:onClick="onClick"/>
+
+                    <ImageView
+                        android:id="@+id/bookImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginBottom="35dip"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/book" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33">
+
+
+                    <Button
+                        android:id="@+id/labButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="382dp"
+                        android:background="@drawable/background"
+                        android:gravity="center|bottom"
+                        android:paddingBottom="10dp"
+                        android:singleLine="false"
+                        android:text="實驗室"
+                        android:textSize="18sp"
+                        android:onClick="onClick"/>
+
+                    <ImageView
+                        android:id="@+id/labImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginBottom="35dip"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/computer" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33">
+
+
+                    <Button
+                        android:id="@+id/classRoomButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="382dp"
+                        android:background="@drawable/background"
+                        android:gravity="center|bottom"
+                        android:paddingBottom="10dp"
+                        android:singleLine="false"
+                        android:text="教室"
+                        android:textSize="18sp"
+                        android:onClick="onClick"/>
+
+                    <ImageView
+                        android:id="@+id/classRoomImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginBottom="35dip"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/school" />
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:layout_weight="0.5">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33">
+
+
+                    <Button
+                        android:id="@+id/meetingRoomButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="382dp"
+                        android:background="@drawable/background"
+                        android:gravity="center|bottom"
+                        android:paddingBottom="10dp"
+                        android:singleLine="false"
+                        android:text="會議室"
+                        android:textSize="18sp"
+                        android:onClick="onClick"/>
+
+                    <ImageView
+                        android:id="@+id/meetingRoomImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginBottom="35dip"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/teamwork" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33">
+
+
+                    <Button
+                        android:id="@+id/officeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="382dp"
+                        android:background="@drawable/background"
+                        android:gravity="center|bottom"
+                        android:paddingBottom="10dp"
+                        android:singleLine="false"
+                        android:text="系辦"
+                        android:textSize="18sp"
+                        android:onClick="onClick"/>
+
+                    <ImageView
+                        android:id="@+id/officeImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginBottom="35dip"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/photocopier" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33">
+
+
+                    <Button
+                        android:id="@+id/otherButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="382dp"
+                        android:background="@drawable/background"
+                        android:gravity="center|bottom"
+                        android:paddingBottom="10dp"
+                        android:singleLine="false"
+                        android:text="其他"
+                        android:textSize="18sp"
+                        android:onClick="onClick"/>
+
+                    <ImageView
+                        android:id="@+id/otherImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginBottom="35dip"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/order" />
+                </RelativeLayout>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

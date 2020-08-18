@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<BuildingA>
+
+
+    <region2>
+        <node id='00020015-0000-0010-1001-000000101001' name='EB208&EB209' region='region2' lat='23.695450277777777' lon='120.53696222222221' neighbor1='00020015-0000-0010-1002-000000101002' neighbor2='' neighbor3='' neighbor4='' category='資工系二樓' nodeType='2' connectPointID='1' groupID='' mainID='' attachID1='' elevation='2'/>
+		
+		<node id='00020015-0000-0010-1002-000000101002' name='EB210' region='region2' lat='23.695450277777777' lon='120.536923' neighbor1='00020015-0000-0010-1001-000000101001' neighbor2='00020015-0000-0010-1003-000000101003' neighbor3='00020015-0000-0010-1005-000000101005' neighbor4='' category='資工系二樓' nodeType='' connectPointID='' groupID='' mainID='3' attachID1='3' elevation='2'/>
+		
+		<node id='00020015-0000-0010-1003-000000101003' name='EB211' region='region2' lat='23.695450277777777' lon='120.53682494444445' neighbor1='00020015-0000-0010-1002-000000101002' neighbor2='00020015-0000-0010-1004-000000101004' neighbor3='' neighbor4='' category='資工系二樓' nodeType='' connectPointID='' groupID='' mainID='' attachID1='' elevation='2'/>
+		
+		<node id='00020015-0000-0010-1004-000000101004' name='樓梯' region='region2' lat='23.695450277777777' lon='120.53667788888889' neighbor1='00020015-0000-0010-1003-000000101003' neighbor2='' neighbor3='' neighbor4='' category='資工系二樓' nodeType='2' connectPointID='2' groupID='' mainID='' attachID1='' elevation='2'/>
+		
+		<node id='00020015-0000-0010-1005-000000101005' name='EB207&EB206' region='region2' lat='23.695360' lon='120.536923' neighbor1='00020015-0000-0010-1002-000000101002' neighbor2='00020015-0000-0010-1006-000000101006' neighbor3='' neighbor4='' category='資工系二樓' nodeType='' connectPointID='' groupID='' mainID='4' attachID1='4' elevation='2'/>
+		
+		<node id='00020015-0000-0010-1006-000000101006' name='EB202' region='region2' lat='23.695179416666665' lon='120.536923' neighbor1='00020015-0000-0010-1005-000000101005' neighbor2='00020015-0000-0010-1007-000000101007' neighbor3='' neighbor4='' category='資工系二樓' nodeType='' connectPointID='' groupID='' mainID='' attachID1='' elevation='2'/>
+		<node id='00020015-0000-0010-1007-000000101007' name='EB201' region='region2' lat='23.695179416666665' lon='120.53684455555555' neighbor1='00020015-0000-0010-1006-000000101006' neighbor2='' neighbor3='' neighbor4='' category='資工系二樓' nodeType='' connectPointID='' groupID='' mainID='' attachID1='' elevation='2'/>
+		
+    </region2>
+
+
+
+
+</BuildingA>
+
+

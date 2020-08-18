@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<BuildingA>
+
+    <region id='1' name='region1' neighbor1='region2' neighbor2='' neighbor3='' neighbor4='' elevation='1'>
+ 
+	    <node id='00010015-0000-0010-1001-000000101001' name='Exit of Civil and Construction Engineering' region='region1' category='其他'/>
+		<node id='00010015-0000-0010-1002-000000101002' name='Office of CSIE' region='region1' category='系辦'/>
+		<node id='00010015-0000-0010-1003-000000101003' name='EB109 Class Room' region='region1' category='教室'/>
+		<node id='00010015-0000-0010-1003-000000101003' name='EB110 Class Room' region='region1' category='教室'/>
+		<node id='00010015-0000-0010-1002-000000101002' name='EB111 Class Room' region='region1' category='會議室'/>
+		<node id='00010015-0000-0010-1004-000000101004' name='Exit of CSIE' region='region1' category='其他'/>
+		
+	</region>
+	
+	<region id='2' name='region2' neighbor1='region1' neighbor2='' neighbor3='' neighbor4='' elevation='2'>
+     
+		<node id='00020015-0000-0010-1001-000000101001' name='EB208 Class Room' region='region2' category='教室'/>
+		<node id='00020015-0000-0010-1001-000000101001' name='Mobile Computing and Wireless Network Laboratory' region='region2' category='實驗室'/>
+		<node id='00020015-0000-0010-1002-000000101002' name='Embedded Intelligent System laboratory' region='region2' category='實驗室'/>
+		<node id='00020015-0000-0010-1002-000000101002' name='Embedded Operating System Laboratory' region='region2' category='實驗室'/>
+		<node id='00020015-0000-0010-1003-000000101003' name='Broadband Radio and Audio and Speech Processing Lab' region='region2' category='實驗室'/>
+		<node id='00020015-0000-0010-1003-000000101003' name='EB211 Class Room' region='region2' category='教室'/>
+		<node id='00020015-0000-0010-1005-000000101005' name='Hyperspectral Signal and Image Processing Laboratory' region='region2' category='實驗室'/>
+		<node id='00020015-0000-0010-1005-000000101005' name='EB207 Meeting Room' region='region2' category='實驗室'/>
+		<node id='00020015-0000-0010-1006-000000101006' name='Medical Image Processing Laboratory' region='region2' category='實驗室'/>
+		<node id='00020015-0000-0010-1007-000000101007' name='Communication Systems Laboratory' region='region2' category='實驗室'/>
+		
+    </region>
+	
+</BuildingA>
+
+
