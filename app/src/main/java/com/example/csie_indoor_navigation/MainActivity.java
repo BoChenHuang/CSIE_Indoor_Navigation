@@ -232,7 +232,9 @@ public class MainActivity extends AppCompatActivity {
             switch (view.getId())
             {
                 case R.id.bookButtom:
-                    // TODO: 2020/6/4 課程查詢頁面轉換
+                    Intent intent = new Intent(MainActivity.this, CurriculumActivity.class);
+                    startActivity(intent);
+                    finish();
                     break;
                 case R.id.labButton:
                     //取出category = 實驗室的目的地
@@ -254,7 +256,12 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 if(which == 0){
-                                    // TODO: 2020/7/16 intent to AR activity
+                                    Intent intent = new Intent(MainActivity.this, AR_NavigationActivity.class);
+                                    intent.putExtra("destinationName", destinationName);
+                                    intent.putExtra("destinationID", destinationID);
+                                    intent.putExtra("destinationRegion", destinationRegion);
+                                    startActivity(intent);
+                                    finish();
                                 }
                                 else if(which == 1){
                                     Intent intent = new Intent(MainActivity.this, NavigationActivity.class);
@@ -295,7 +302,12 @@ public class MainActivity extends AppCompatActivity {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         if(which == 0){
-                                            // TODO: 2020/7/16  intent to AR activity
+                                            Intent intent = new Intent(MainActivity.this, AR_NavigationActivity.class);
+                                            intent.putExtra("destinationName", destinationName);
+                                            intent.putExtra("destinationID", destinationID);
+                                            intent.putExtra("destinationRegion", destinationRegion);
+                                            startActivity(intent);
+                                            finish();
                                         }
                                         else if(which == 1){
                                             Intent intent = new Intent(MainActivity.this, NavigationActivity.class);
@@ -333,7 +345,12 @@ public class MainActivity extends AppCompatActivity {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         if(which == 0){
-                                            // TODO: 2020/7/16  intent to AR activity
+                                            Intent intent = new Intent(MainActivity.this, AR_NavigationActivity.class);
+                                            intent.putExtra("destinationName", destinationName);
+                                            intent.putExtra("destinationID", destinationID);
+                                            intent.putExtra("destinationRegion", destinationRegion);
+                                            startActivity(intent);
+                                            finish();
                                         }
                                         else if (which == 1){
                                             Intent intent = new Intent(MainActivity.this, NavigationActivity.class);
@@ -371,7 +388,12 @@ public class MainActivity extends AppCompatActivity {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         if(which == 0){
-                                            // TODO: 2020/7/16  intent to AR activity
+                                            Intent intent = new Intent(MainActivity.this, AR_NavigationActivity.class);
+                                            intent.putExtra("destinationName", destinationName);
+                                            intent.putExtra("destinationID", destinationID);
+                                            intent.putExtra("destinationRegion", destinationRegion);
+                                            startActivity(intent);
+                                            finish();
                                         }
                                         else if(which == 1){
                                             Intent intent = new Intent(MainActivity.this, NavigationActivity.class);
@@ -409,7 +431,12 @@ public class MainActivity extends AppCompatActivity {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         if(which == 0){
-                                            // TODO: 2020/7/16 intent to AR activity
+                                            Intent intent = new Intent(MainActivity.this, AR_NavigationActivity.class);
+                                            intent.putExtra("destinationName", destinationName);
+                                            intent.putExtra("destinationID", destinationID);
+                                            intent.putExtra("destinationRegion", destinationRegion);
+                                            startActivity(intent);
+                                            finish();
                                         }
                                         else if(which == 1){
                                             Intent intent = new Intent(MainActivity.this, NavigationActivity.class);

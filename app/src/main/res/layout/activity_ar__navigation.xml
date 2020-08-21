@@ -29,10 +29,10 @@
             android:text="@string/CHT_DESTINATION"
             android:textSize="20dp"
             android:padding="8sp"
-            android:id="@+id/destnation"
+            android:id="@+id/destination"
             android:textColor="@android:color/black"/>
         <TextView
-            android:id="@+id/curentLocation"
+            android:id="@+id/currentLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8sp"

@@ -16,6 +16,20 @@ public class ARInitialImage {
     {
         int predict = -1;
         switch (nowWaypointID){
+            //虛擬點1
+            case "first":
+                if(nextWaypointID.equals(context.getString(R.string.UUID_of_A3)))
+                    predict = 0;
+                else if(nextWaypointID.equals(context.getString(R.string.UUID_of_B1)))
+                    predict = 0;
+                break;
+            //虛擬點2
+            case "second":
+                if(nextWaypointID.equals(context.getString(R.string.UUID_of_A4)))
+                    predict = 0;
+                else if(nextWaypointID.equals(context.getString(R.string.UUID_of_B4)))
+                    predict = 0;
+                break;
             //A1
             case "00010015-0000-0010-1001-000000101001":
                 if(nextWaypointID.equals(context.getString(R.string.UUID_of_A2)))

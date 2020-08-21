@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurriculumActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="135dp">
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/curriculumText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffcc99"
+                        android:layout_margin="0.5dip">
+
+                        <TextView
+                            android:id="@+id/timeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time" />
+
+                        <TextView
+                            android:id="@+id/eb109Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="EB109" />
+
+                        <TextView
+                            android:id="@+id/eb110Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="EB110" />
+
+                        <TextView
+                            android:id="@+id/eb203Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="EB203" />
+
+                        <TextView
+                            android:id="@+id/eb208Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="EB208" />
+
+                        <TextView
+                            android:id="@+id/eb211Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="EB211" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/timeAText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0.5dip"
+                            android:background="#ffffcc99"
+                            android:gravity="center_vertical"
+                            android:text="8:10 ~ 9:00" />
+
+                        <Button
+                            android:id="@+id/eb109TimeAbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb110TimeAbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb203TimeAbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb208TimeAbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb211TimeAbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/timeBText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0.5dip"
+                            android:background="#ffffcc99"
+                            android:gravity="center_vertical"
+                            android:text="9:10 ~ 10:00" />
+
+                        <Button
+                            android:id="@+id/eb109TimeBbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb110TimeBbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb203TimeBbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb208TimeBbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb211TimeBbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/timeCText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0.5dip"
+                            android:background="#ffffcc99"
+                            android:gravity="center_vertical"
+                            android:text="10:10 ~ 11:00" />
+
+                        <Button
+                            android:id="@+id/eb109TimeCbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb110TimeCbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb203TimeCbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb208TimeCbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb211TimeCbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/timeDText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0.5dip"
+                            android:background="#ffffcc99"
+                            android:gravity="center_vertical"
+                            android:text="11:10 ~ 12:00" />
+
+                        <Button
+                            android:id="@+id/eb109TimeDbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb110TimeDbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb203TimeDbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb208TimeDbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb211TimeDbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/timeEText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0.5dip"
+                            android:background="#ffffcc99"
+                            android:gravity="center_vertical"
+                            android:text="13:10 ~ 14:00" />
+
+                        <Button
+                            android:id="@+id/eb109TimeEbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb110TimeEbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb203TimeEbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb208TimeEbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb211TimeEbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/timeFText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0.5dip"
+                            android:background="#ffffcc99"
+                            android:gravity="center_vertical"
+                            android:text="14:10 ~ 15:00" />
+
+                        <Button
+                            android:id="@+id/eb109TimeFbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb110TimeFbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb203TimeFbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb208TimeFbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb211TimeFbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/timeGText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0.5dip"
+                            android:background="#ffffcc99"
+                            android:gravity="center_vertical"
+                            android:text="15:10 ~ 16:00" />
+
+                        <Button
+                            android:id="@+id/eb109TimeGbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb110TimeGbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb203TimeGbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb208TimeGbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb211TimeGbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/timeHText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0.5dip"
+                            android:background="#ffffcc99"
+                            android:gravity="center_vertical"
+                            android:text="16:10 ~ 17:00" />
+
+                        <Button
+                            android:id="@+id/eb109TimeHbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb110TimeHbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb203TimeHbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb208TimeHbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb211TimeHbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="258dp">
+
+                        <TextView
+                            android:id="@+id/timeZText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0.5dip"
+                            android:background="#ffffcc99"
+                            android:gravity="center_vertical"
+                            android:text="17:10 ~ 18:00" />
+
+                        <Button
+                            android:id="@+id/eb109TimeZbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb110TimeZbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb203TimeZbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb208TimeZbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/eb211TimeZbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

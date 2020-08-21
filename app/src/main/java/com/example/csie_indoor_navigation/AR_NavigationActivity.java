@@ -495,8 +495,11 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
         navigationGraphForAllWaypoint = DataParser.getWaypointDataFromNavigationGraph(this, regionGraph.getAllRegionNames());
 
         //將每個Region中的Node加入，建立所有的waypoint資料。
+        Log.i("ARnavigationGraphForAllWaypoint", "size = " + navigationGraphForAllWaypoint.size());
         for(int i = 0; i < navigationGraphForAllWaypoint.size(); i++){
+            Log.i("ARnavigationGraphForAllWaypoint", "get( "+ i +").nodeInSubgraph = " + navigationGraphForAllWaypoint.get(i).nodesInSubgraph.entrySet());
             allWaypointData.putAll(navigationGraphForAllWaypoint.get(i).nodesInSubgraph);
+            Log.i("ARallWaypointData","" + allWaypointData.get(i));
         }
 
         signalProcessor.setAllWaypointData(allWaypointData);
@@ -1379,8 +1382,8 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
         //UI Setup
         View.inflate(this, R.layout.activity_ar__navigation, ((ViewGroup) mViroView));
         setTitle(TITLE);
-        facingDirectionText = findViewById(R.id.faceDirectoin);
-        destinationText = findViewById(R.id.destinationText);
+        facingDirectionText = findViewById(R.id.facingDirection);
+        destinationText = findViewById(R.id.destination);
         destinationText.setText(DESTINATION + destinationName);
         currentLocationText = findViewById(R.id.currentLocation);
         currentLocationText.setText(PRESENT_POSITION);
@@ -1768,7 +1771,7 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                     }
                     else
                     {
-                        Toast.makeText(AR_NavigationActivity.this, PLEASE_FACE_TO, Toast.LENGTH_LONG).show();
+                        Toast.makeText(AR_NavigationActivity.this, PLEASE_FACE_TO + toDirection(predictDirection), Toast.LENGTH_LONG).show();
                         return;
                     }
                 }
@@ -1969,7 +1972,7 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                     }
                     else
                     {
-                        Toast.makeText(AR_NavigationActivity.this, PLEASE_FACE_TO = toDirection(predictDirection), Toast.LENGTH_LONG).show();
+                        Toast.makeText(AR_NavigationActivity.this, PLEASE_FACE_TO + toDirection(predictDirection), Toast.LENGTH_LONG).show();
                         return;
                     }
                 }
@@ -2408,6 +2411,7 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        signalProcessor = new Signal_Processor(AR_NavigationActivity.this);
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         offset = (double)sharedPreferences.getFloat("offset",0);
 

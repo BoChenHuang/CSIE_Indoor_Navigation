@@ -96,7 +96,16 @@ public class RecyclerViewAdaper extends RecyclerView.Adapter<MyViewHolder> {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     if(which == 0){ //AR mode
-                                        // TODO: 2020/7/16  intent to AR activity
+                                        Intent intent = new Intent(context, AR_NavigationActivity.class);
+                                        Log.i("current" ,"currentName = " + current.getName()
+                                                + "\ncurrentID = " + current.getID()
+                                                + "\ncurrentRegion = " + current.get_regionID());
+
+                                        intent.putExtra("destinationName", current.getName());
+                                        intent.putExtra("destinationID", current.getID());
+                                        intent.putExtra("destinationRegion",current.get_regionID());
+                                        context.startActivity(intent);
+                                        ((Activity)context).finish();
                                     }
                                     else if(which == 1){//Normal mode
                                         Intent intent = new Intent(context, NavigationActivity.class);
