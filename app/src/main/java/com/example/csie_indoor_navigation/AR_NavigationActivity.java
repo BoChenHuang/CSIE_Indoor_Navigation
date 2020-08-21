@@ -1684,8 +1684,11 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     case ELEVATOR_WAYPOINT:
                     case STAIRWELL_WAYPOINT:
-                        if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
-                            nextFloor = navigationPath.get(2)._elevation;
+                        if(navigationPath.size() > 2)
+                        {
+                            if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
+                                nextFloor = navigationPath.get(2)._elevation;
+                        }
                         break;
                     case NORMAL_WAYPOINT:
                         break;
@@ -1718,8 +1721,11 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     case ELEVATOR_WAYPOINT:
                     case STAIRWELL_WAYPOINT:
-                        if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
-                            nextFloor = navigationPath.get(2)._elevation;
+                        if(navigationPath.size() > 2)
+                        {
+                            if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
+                                nextFloor = navigationPath.get(2)._elevation;
+                        }
                         break;
                     case NORMAL_WAYPOINT:
                         break;
@@ -1752,8 +1758,11 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     case ELEVATOR_WAYPOINT:
                     case STAIRWELL_WAYPOINT:
-                        if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
-                            nextFloor = navigationPath.get(2)._elevation;
+                        if(navigationPath.size() > 2)
+                        {
+                            if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
+                                nextFloor = navigationPath.get(2)._elevation;
+                        }
                         break;
                     case NORMAL_WAYPOINT:
                         break;
@@ -1786,8 +1795,11 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     case ELEVATOR_WAYPOINT:
                     case STAIRWELL_WAYPOINT:
-                        if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
-                            nextFloor = navigationPath.get(2)._elevation;
+                        if(navigationPath.size() > 2)
+                        {
+                            if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
+                                nextFloor = navigationPath.get(2)._elevation;
+                        }
                         break;
                     case NORMAL_WAYPOINT:
                         break;
@@ -1820,8 +1832,11 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     case ELEVATOR_WAYPOINT:
                     case STAIRWELL_WAYPOINT:
-                        if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
-                            nextFloor = navigationPath.get(2)._elevation;
+                        if(navigationPath.size() > 2)
+                        {
+                            if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
+                                nextFloor = navigationPath.get(2)._elevation;
+                        }
                         break;
                     case NORMAL_WAYPOINT:
                         break;
@@ -1854,8 +1869,11 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     case ELEVATOR_WAYPOINT:
                     case STAIRWELL_WAYPOINT:
-                        if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
-                            nextFloor = navigationPath.get(2)._elevation;
+                        if(navigationPath.size() > 2)
+                        {
+                            if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
+                                nextFloor = navigationPath.get(2)._elevation;
+                        }
                         break;
                     case NORMAL_WAYPOINT:
                         break;
@@ -1888,8 +1906,11 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     case ELEVATOR_WAYPOINT:
                     case STAIRWELL_WAYPOINT:
-                        if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
-                            nextFloor = navigationPath.get(2)._elevation;
+                        if(navigationPath.size() > 2)
+                        {
+                            if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
+                                nextFloor = navigationPath.get(2)._elevation;
+                        }
                         break;
                     case NORMAL_WAYPOINT:
                         break;
@@ -1922,8 +1943,11 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     case ELEVATOR_WAYPOINT:
                     case STAIRWELL_WAYPOINT:
-                        if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
-                            nextFloor = navigationPath.get(2)._elevation;
+                        if(navigationPath.size() > 2)
+                        {
+                            if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
+                                nextFloor = navigationPath.get(2)._elevation;
+                        }
                         break;
                     case NORMAL_WAYPOINT:
                         break;
@@ -1956,8 +1980,11 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     case ELEVATOR_WAYPOINT:
                     case STAIRWELL_WAYPOINT:
-                        if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
-                            nextFloor = navigationPath.get(2)._elevation;
+                        if(navigationPath.size() > 2)
+                        {
+                            if(!navigationPath.get(1)._regionID.equals(navigationPath.get(2)._regionID))
+                                nextFloor = navigationPath.get(2)._elevation;
+                        }
                         break;
                     case NORMAL_WAYPOINT:
                         break;
