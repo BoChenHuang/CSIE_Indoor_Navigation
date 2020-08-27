@@ -266,4 +266,7 @@
 
     <string name="CHT_FACING_DIRECION">目前面對方向 : </string>
     <string name="ENG_FACING_DIRECION">The current facing direcion : </string>
+    
+    <string name="CHT_PLEASE_KEEP_PHONE_UPRIGHT">請保持手機直立</string>
+    <string name="ENG_PLEASE_KEEP_PHONE_UPRIGHT">Please keep the phone upright.</string>
 </resources>

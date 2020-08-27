@@ -197,6 +197,7 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
     private String THEN_ARRIVE;
 
     private String INIT_DIRECTION_TITLE;
+    private String PLEASE_KEEP_PHONE_UPRIGHT;
 
     //---------------------Direcion List---------------------
     private String NORTH;
@@ -405,6 +406,7 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
             REROUTING = getString(R.string.CHT_REROUTING);
             WAIT_FOR_SIGNAL = getString(R.string.CHT_WAIT_FOR_INSTRUCTION);
             THEN_ARRIVE = getString(R.string.CHT_THEN_ARRIVE);
+            PLEASE_KEEP_PHONE_UPRIGHT = getString(R.string.CHT_PLEASE_KEEP_PHONE_UPRIGHT);
         }
         else if(languageOption.equals("English")){
             TITLE = getString(R.string.ENG_TITLE);
@@ -487,6 +489,7 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
             REROUTING = getString(R.string.ENG_REROUTING);
             WAIT_FOR_SIGNAL = getString(R.string.ENG_WAIT_FOR_INSTRUCTION);
             THEN_ARRIVE = getString(R.string.ENG_THEN_ARRIVE);
+            PLEASE_KEEP_PHONE_UPRIGHT = getString(R.string.ENG_PLEASE_KEEP_PHONE_UPRIGHT);
         }
 
     }
@@ -1173,6 +1176,22 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
         }
     };
 
+    private float getPitch()
+    {
+        float[] tempValues = new float[3];
+        float[] tempRotation = new float[9];
+        SensorManager.getRotationMatrix(tempRotation, null, accelerometerValue,magneticValue);
+        SensorManager.getOrientation(tempRotation, tempValues);
+
+        //toDegrees
+        tempValues[0] = (float) Math.toDegrees(tempValues[0]);
+        tempValues[1] = (float) Math.toDegrees(tempValues[1]);
+        tempValues[2] = (float) Math.toDegrees(tempValues[2]);
+
+        //return Pitch
+        return tempValues[1];
+    }
+
     private void calculateOrientation(){
         float[] tempValues = new float[3];
         float[] tempRotation = new float[9];
@@ -1645,11 +1664,19 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                     return;
                 }
                 else if(currentDirection == predictDirection){
-                    Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
-                    if(navigationPath.get(0)._nodeType == ELEVATOR_WAYPOINT)
-                        turnDirection = ELEVATOR;
-                    else if(navigationPath.get(1)._nodeType == STAIRWELL_WAYPOINT)
-                        turnDirection = STAIR;
+                    if(getPitch() < -80 && getPitch() > -90)
+                    {
+                        Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
+                        if(navigationPath.get(0)._nodeType == ELEVATOR_WAYPOINT)
+                            turnDirection = ELEVATOR;
+                        else if(navigationPath.get(1)._nodeType == STAIRWELL_WAYPOINT)
+                            turnDirection = STAIR;
+                    }
+                    else
+                    {
+                        Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
+                    }
+
                 }
             }
             else if(turnDirection != STAIR && turnDirection != ELEVATOR && turnDirection != ARRIVED)
@@ -1661,9 +1688,17 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 }
                 else if(currentDirection == predictDirection)
                 {
-                    Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
-                    add3DObject("file:///android_asset/ARModel/Front.obj",mViroView.getLastCameraPositionRealtime().add(mViroView.getLastCameraForwardRealtime()),navigationPath.get(0)._waypointID);
-                    firstTurn = false;
+                    if(getPitch() < -80 && getPitch() > -90)
+                    {
+                        Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
+                        add3DObject("file:///android_asset/ARModel/Front.obj",mViroView.getLastCameraPositionRealtime().add(mViroView.getLastCameraForwardRealtime()),navigationPath.get(0)._waypointID);
+                        firstTurn = false;
+                    }
+                    else
+                    {
+                        Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
+                    }
+
                 }
             }
         }
@@ -1697,11 +1732,18 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     if(currentDirection == predictDirection)
                     {
-                        if(turnNotificationForPopup != null)
+                        if(getPitch() < -80 && getPitch() > -90)
                         {
-                            Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
-                            showHintAtWaypoint(MAKETURN_NOTIFIER);
-                            makeNextPredictDirection(turnNotificationForPopup);
+                            if(turnNotificationForPopup != null)
+                            {
+                                Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
+                                showHintAtWaypoint(MAKETURN_NOTIFIER);
+                                makeNextPredictDirection(turnNotificationForPopup);
+                            }
+                        }
+                        else
+                        {
+                            Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
                         }
                     }
                     else
@@ -1734,12 +1776,17 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     if(currentDirection == predictDirection)
                     {
-                        if(turnNotificationForPopup != null)
+                        if(getPitch() < -80 && getPitch() > -90)
                         {
-                            Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
-                            showHintAtWaypoint(MAKETURN_NOTIFIER);
-                            makeNextPredictDirection(turnNotificationForPopup);
+                            if(turnNotificationForPopup != null)
+                            {
+                                Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
+                                showHintAtWaypoint(MAKETURN_NOTIFIER);
+                                makeNextPredictDirection(turnNotificationForPopup);
+                            }
                         }
+                        else
+                            Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
                     }
                     else 
                     {
@@ -1771,12 +1818,17 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     if(currentDirection == predictDirection)
                     {
-                        if(turnNotificationForPopup != null)
+                        if(getPitch() < -80 && getPitch() > -90)
                         {
-                            Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
-                            showHintAtWaypoint(MAKETURN_NOTIFIER);
-                            makeNextPredictDirection(turnNotificationForPopup);
+                            if(turnNotificationForPopup != null)
+                            {
+                                Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
+                                showHintAtWaypoint(MAKETURN_NOTIFIER);
+                                makeNextPredictDirection(turnNotificationForPopup);
+                            }
                         }
+                        else
+                            Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
                     }
                     else
                     {
@@ -1808,12 +1860,17 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     if(currentDirection == predictDirection)
                     {
-                        if(turnNotificationForPopup != null)
+                        if(getPitch() < -80 && getPitch() > -90)
                         {
-                            Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
-                            showHintAtWaypoint(MAKETURN_NOTIFIER);
-                            makeNextPredictDirection(turnNotificationForPopup);
+                            if(turnNotificationForPopup != null)
+                            {
+                                Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
+                                showHintAtWaypoint(MAKETURN_NOTIFIER);
+                                makeNextPredictDirection(turnNotificationForPopup);
+                            }
                         }
+                       else
+                            Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
                     }
                     else
                     {
@@ -1845,12 +1902,18 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     if(currentDirection == predictDirection)
                     {
-                        if(turnNotificationForPopup != null)
+                        if(getPitch() < -80 && getPitch() > -90)
                         {
-                            Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
-                            showHintAtWaypoint(MAKETURN_NOTIFIER);
-                            makeNextPredictDirection(turnNotificationForPopup);
+                            if(turnNotificationForPopup != null)
+                            {
+                                Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
+                                showHintAtWaypoint(MAKETURN_NOTIFIER);
+                                makeNextPredictDirection(turnNotificationForPopup);
+                            }
                         }
+                        else
+                            Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
+
                     }
                     else
                     {
@@ -1882,12 +1945,18 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     if(currentDirection == predictDirection)
                     {
-                        if(turnNotificationForPopup != null)
+                        if(getPitch() < -80 && getPitch() > -90)
                         {
-                            Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
-                            showHintAtWaypoint(MAKETURN_NOTIFIER);
-                            makeNextPredictDirection(turnNotificationForPopup);
+                            if(turnNotificationForPopup != null)
+                            {
+                                Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
+                                showHintAtWaypoint(MAKETURN_NOTIFIER);
+                                makeNextPredictDirection(turnNotificationForPopup);
+                            }
                         }
+                        else
+                            Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
+
                     }
                     else
                     {
@@ -1919,12 +1988,18 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     if(currentDirection == predictDirection)
                     {
-                        if(turnNotificationForPopup != null)
+                        if(getPitch() < -80 && getPitch() > -90)
                         {
-                            Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG);
-                            showHintAtWaypoint(MAKETURN_NOTIFIER);
-                            makeNextPredictDirection(turnNotificationForPopup);
+                            if(turnNotificationForPopup != null)
+                            {
+                                Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG);
+                                showHintAtWaypoint(MAKETURN_NOTIFIER);
+                                makeNextPredictDirection(turnNotificationForPopup);
+                            }
                         }
+                        else
+                            Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
+
                     }
                     else
                     {
@@ -1956,12 +2031,18 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     if(currentDirection == predictDirection)
                     {
-                        if(turnNotificationForPopup != null)
+                        if(getPitch() < -80 && getPitch() > -90)
                         {
-                            Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
-                            showHintAtWaypoint(MAKETURN_NOTIFIER);
-                            makeNextPredictDirection(turnNotificationForPopup);
+                            if(turnNotificationForPopup != null)
+                            {
+                                Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
+                                showHintAtWaypoint(MAKETURN_NOTIFIER);
+                                makeNextPredictDirection(turnNotificationForPopup);
+                            }
                         }
+                        else
+                            Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
+
                     }
                     else
                     {
@@ -1993,9 +2074,14 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                 {
                     if(currentDirection == predictDirection)
                     {
-                        Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
-                        showHintAtWaypoint(MAKETURN_NOTIFIER);
-                        makeNextPredictDirection(turnNotificationForPopup);
+                        if(getPitch() < -80 && getPitch() > -90)
+                        {
+                            Toast.makeText(AR_NavigationActivity.this, RIGHT_DIRECTION, Toast.LENGTH_LONG).show();
+                            showHintAtWaypoint(MAKETURN_NOTIFIER);
+                            makeNextPredictDirection(turnNotificationForPopup);
+                        }
+                        else
+                            Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
                     }
                     else
                     {
@@ -2106,10 +2192,15 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                                             .getPredict(navigationPath.get(0)._waypointID, navigationPath.get(1)._waypointID);
                     if(currentDirection == predictDirection)
                     {
-                        add3DObject("file:///android_asset/ARModel/Front.obj",
-                                        mViroView.getLastCameraPositionRealtime().add(mViroView.getLastCameraForwardRealtime()),
-                                        navigationPath.get(0)._waypointID);
-                        firstTurn = false;
+                        if(getPitch() < -80 && getPitch() > -90)
+                        {
+                            add3DObject("file:///android_asset/ARModel/Front.obj",
+                                    mViroView.getLastCameraPositionRealtime().add(mViroView.getLastCameraForwardRealtime()),
+                                    navigationPath.get(0)._waypointID);
+                            firstTurn = false;
+                        }
+                        else
+                            Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
                     }
                     else 
                     {
@@ -2150,8 +2241,13 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                     predictDirection = new ARInitialImage(AR_NavigationActivity.this).getPredict(navigationPath.get(0)._waypointID, navigationPath.get(1)._waypointID);
                     if(currentDirection == predictDirection)
                     {
-                        add3DObject("file:///android_asset/ARModel/Front.obj",mViroView.getLastCameraPositionRealtime().add(mViroView.getLastCameraForwardRealtime()),navigationPath.get(0)._waypointID);
-                        firstTurn = false;
+                        if(getPitch() < -80 && getPitch() > -90)
+                        {
+                            add3DObject("file:///android_asset/ARModel/Front.obj",mViroView.getLastCameraPositionRealtime().add(mViroView.getLastCameraForwardRealtime()),navigationPath.get(0)._waypointID);
+                            firstTurn = false;
+                        }
+                        else
+                            Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
                     }
                     else
                     {
