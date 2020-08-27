@@ -1675,6 +1675,7 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                     else
                     {
                         Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
+                        return;
                     }
 
                 }
@@ -1697,6 +1698,7 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                     else
                     {
                         Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
+                        return;
                     }
 
                 }
@@ -1744,6 +1746,7 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                         else
                         {
                             Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
+                            return;
                         }
                     }
                     else
@@ -1786,7 +1789,10 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                             }
                         }
                         else
+                        {
                             Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
+                            return;
+                        }
                     }
                     else 
                     {
@@ -1828,7 +1834,10 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                             }
                         }
                         else
+                        {
                             Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
+                            return;
+                        }
                     }
                     else
                     {
@@ -1870,7 +1879,10 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                             }
                         }
                        else
+                        {
                             Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
+                            return;
+                        }
                     }
                     else
                     {
@@ -1912,8 +1924,10 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                             }
                         }
                         else
+                        {
                             Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
-
+                            return;
+                        }
                     }
                     else
                     {
@@ -1955,8 +1969,10 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                             }
                         }
                         else
+                        {
                             Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
-
+                            return;
+                        }
                     }
                     else
                     {
@@ -1998,8 +2014,10 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                             }
                         }
                         else
+                        {
                             Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
-
+                            return;
+                        }
                     }
                     else
                     {
@@ -2041,8 +2059,10 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                             }
                         }
                         else
+                        {
                             Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
-
+                            return;
+                        }
                     }
                     else
                     {
@@ -2081,7 +2101,10 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                             makeNextPredictDirection(turnNotificationForPopup);
                         }
                         else
+                        {
                             Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
+                            return;
+                        }
                     }
                     else
                     {
@@ -2200,7 +2223,10 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                             firstTurn = false;
                         }
                         else
+                        {
                             Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
+                            return;
+                        }
                     }
                     else 
                     {
@@ -2247,7 +2273,10 @@ public class AR_NavigationActivity extends AppCompatActivity implements BeaconCo
                             firstTurn = false;
                         }
                         else
+                        {
                             Toast.makeText(AR_NavigationActivity.this, PLEASE_KEEP_PHONE_UPRIGHT, Toast.LENGTH_LONG).show();
+                            return;
+                        }
                     }
                     else
                     {
